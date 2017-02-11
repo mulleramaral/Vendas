@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IServicoDeAplicacaoDeCliente.cs" />
+    <Compile Include="Interface\IServicoDeAplicacaoDeProduto.cs" />
+    <Compile Include="Interface\IServicoDeAplicacaoPadrao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoDeAplicacaoDeCliente.cs" />
+    <Compile Include="ServicoDeAplicacaoDeProduto.cs" />
+    <Compile Include="ServicoDeAplicacaoPadrao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vendas.Domain\Vendas.Domain.csproj">
+      <Project>{4EFC8A77-398C-4828-9007-C38C30546077}</Project>
+      <Name>Vendas.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

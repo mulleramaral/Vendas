@@ -52,7 +52,11 @@
     <Compile Include="Contexto\VendasContext.cs" />
     <Compile Include="EntityConfig\ClienteConfiguration.cs" />
     <Compile Include="EntityConfig\ProdutoConfiguration.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RepositorioDeCliente.cs" />
+    <Compile Include="Repositories\RepositorioDeProduto.cs" />
+    <Compile Include="Repositories\RepositorioPadrao.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
