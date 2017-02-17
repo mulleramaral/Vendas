@@ -33,6 +33,9 @@ namespace Vendas.Infra.Data.Contexto
 
             modelBuilder.Configurations.Add(new ClienteConfiguration());
             modelBuilder.Configurations.Add(new ProdutoConfiguration());
+
+            modelBuilder.Configurations.Add(new AdiantamentoClienteConfiguration());
+            modelBuilder.Configurations.Add(new AdiantamentoFornecedorConfiguration());
         }
 
         private void FixEfProviderServicesProblem()

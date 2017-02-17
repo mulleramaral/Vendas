@@ -4,6 +4,7 @@ using SimpleInjector.Integration.Web.Mvc;
 using System.Web.Mvc;
 using Vendas.Application;
 using Vendas.Application.Interface;
+using Vendas.Domain.Entities;
 using Vendas.Domain.Interfaces.Repositories;
 using Vendas.Domain.Interfaces.Services;
 using Vendas.Domain.Services;
@@ -29,6 +30,19 @@ namespace Vendas.MVC.App_Start
             c.Register<IServicoDeProduto, ServicoDeProduto>(Lifestyle.Scoped);
             c.Register<IRepositorioDeCliente, RepositorioDeCliente>(Lifestyle.Scoped);
             c.Register<IRepositorioDeProduto, RepositorioDeProduto>(Lifestyle.Scoped);
+
+
+            //Funcionou
+            c.Register<IServicoDeAplicacaoDeAdiantamento<AdiantamentoCliente>, ServicoDeAplicacaoDeAdiantamento<AdiantamentoCliente>>(Lifestyle.Scoped);
+            c.Register<IServicoDeAplicacaoDeAdiantamento<AdiantamentoFornecedor>, ServicoDeAplicacaoDeAdiantamento<AdiantamentoFornecedor>>(Lifestyle.Scoped);
+            c.Register<IServicoDeAdiantamento<AdiantamentoFornecedor>, ServicoDeAdiantamento<AdiantamentoFornecedor>>(Lifestyle.Scoped);
+            c.Register<IServicoDeAdiantamento<AdiantamentoCliente>, ServicoDeAdiantamento<AdiantamentoCliente>>(Lifestyle.Scoped);
+            c.Register<IRepositorioDeAdiantamento<AdiantamentoCliente>, RepositorioDeAdiantamento<AdiantamentoCliente>>(Lifestyle.Scoped);
+            c.Register<IRepositorioDeAdiantamento<AdiantamentoFornecedor>, RepositorioDeAdiantamento<AdiantamentoFornecedor>>(Lifestyle.Scoped);
+
+            //Normal
+            //c.Register<IRepositorioDeAdiantamentoCliente, RepositorioDeAdiantamentoCliente>(Lifestyle.Scoped);
+            //c.Register<IRepositorioDeAdiantamentoFornecedor, RepositorioDeAdiantamentoFornecedor>(Lifestyle.Scoped);
 
             c.Verify();
 

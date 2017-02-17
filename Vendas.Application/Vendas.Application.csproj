@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IServicoDeAplicacaoDeAdiantamento.cs" />
     <Compile Include="Interface\IServicoDeAplicacaoDeCliente.cs" />
     <Compile Include="Interface\IServicoDeAplicacaoDeProduto.cs" />
     <Compile Include="Interface\IServicoDeAplicacaoPadrao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServicoDeAplicacaoDeAdiantamento.cs" />
     <Compile Include="ServicoDeAplicacaoDeCliente.cs" />
     <Compile Include="ServicoDeAplicacaoDeProduto.cs" />
     <Compile Include="ServicoDeAplicacaoPadrao.cs" />

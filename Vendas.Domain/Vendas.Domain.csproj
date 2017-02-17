@@ -40,15 +40,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Adiantamento.cs" />
+    <Compile Include="Entities\AdiantamentoCliente.cs" />
+    <Compile Include="Entities\AdiantamentoFornecedor.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Produto.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositorioDeAdiantamento.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositorioDeAdiantamentoCliente.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositorioDeAdiantamentoFornecedor.cs" />
     <Compile Include="Interfaces\Repositories\IRepositorioDeCliente.cs" />
     <Compile Include="Interfaces\Repositories\IRepositorioDeProduto.cs" />
     <Compile Include="Interfaces\Repositories\IRepositorioPadrao.cs" />
+    <Compile Include="Interfaces\Services\IServicoDeAdiantamento.cs" />
     <Compile Include="Interfaces\Services\IServicoDeCliente.cs" />
     <Compile Include="Interfaces\Services\IServicoDeProduto.cs" />
     <Compile Include="Interfaces\Services\IServicoPadrao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ServicoDeAdiantamento.cs" />
     <Compile Include="Services\ServicoDeCliente.cs" />
     <Compile Include="Services\ServicoDeProduto.cs" />
     <Compile Include="Services\ServicoPadrao.cs" />

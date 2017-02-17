@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Vendas.Application.Interface;
 using Vendas.Domain.Entities;
 using Vendas.Domain.Interfaces.Services;

@@ -50,15 +50,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contexto\VendasContext.cs" />
+    <Compile Include="EntityConfig\AdiantamentoClienteConfiguration.cs" />
+    <Compile Include="EntityConfig\AdiantamentoConfiguration.cs" />
+    <Compile Include="EntityConfig\AdiantamentoFornecedorConfiguration.cs" />
     <Compile Include="EntityConfig\ClienteConfiguration.cs" />
     <Compile Include="EntityConfig\ProdutoConfiguration.cs" />
+    <Compile Include="Migrations\201702172113067_testes.cs" />
+    <Compile Include="Migrations\201702172113067_testes.Designer.cs">
+      <DependentUpon>201702172113067_testes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RepositorioDeAdiantamento.cs" />
+    <Compile Include="Repositories\RepositorioDeAdiantamentoCliente.cs" />
+    <Compile Include="Repositories\RepositorioDeAdiantamentoFornecedor.cs" />
     <Compile Include="Repositories\RepositorioDeCliente.cs" />
     <Compile Include="Repositories\RepositorioDeProduto.cs" />
     <Compile Include="Repositories\RepositorioPadrao.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201702172113067_testes.resx">
+      <DependentUpon>201702172113067_testes.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
